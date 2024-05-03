@@ -1,6 +1,6 @@
 var swiper = new Swiper(".mySwiper", {
   slidesPerView: 3,
-  spaceBetween: 25,
+  spaceBetween: 0,
   loop: true,
   centerSlide: 'true',
   fade: 'true',
@@ -30,12 +30,19 @@ var swiper = new Swiper(".mySwiper", {
 });
 
 const header = document.querySelector('header');
+const img = document.getElementById('nav-img');
+let navbar = document.querySelector('nav')
+
 window.addEventListener('scroll',() => {
-  if(window.scrollY > 400){
+  if(window.scrollY > 50){
       header.classList.add('scrolled')
+      img.src = "./asset/img/logo.svg"
+      navbar.dataset.bsTheme ="light"
   }
-  else if(window.scrollY <= 400)
+  else if(window.scrollY <= 50)
   {
       header.classList.remove('scrolled')
+      img.src = "./asset/img/logo.png"
+      navbar.dataset.bsTheme ="dark"
   }
 })

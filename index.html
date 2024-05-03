@@ -19,22 +19,29 @@
 </head>
 <body>
     <header>
-        <nav class="navbar navbar-expand-lg fixed-top bg-transparent">
+        <nav class="navbar navbar-expand-lg fixed-top bg-transparent" data-bs-theme="dark">
             <div class="container">
                 <!-- logo -->
-              <a class="navbar-brand" href="#"><img src="./asset/img/logo.svg" alt=""></a>
+              <a class="navbar-brand" href="#"><img id="nav-img" src="./asset/img/logo.png" alt=""></a>
               <!-- toggle btn -->
               <button class="navbar-toggler shadow-none border-0" 
               type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
                 <span class="navbar-toggler-icon"></span>
               </button>
               <!-- sid bar -->
-              <div class="sidbar  offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
-                <div class="offcanvas-header">
-                  <h5 class="offcanvas-title" id="offcanvasNavbarLabel"><img src="/asset/img/logo.svg" alt=""></h5>
-                  <button type="button" class="btn-close shadow" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+              <div class="sidebar offcanvas offcanvas-start"
+               data-bs-scroll="true"
+               data-bs-theme="dark"
+                tabindex="-1"
+                 id="offcanvasNavbar"
+                  aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas-header border-bottom">
+                  <h5 class="offcanvas-title" id="offcanvasNavbarLabel"><img src="/asset/img/logo.png" alt=""></h5>
+                  <button type="button" 
+                  class="btn-close shadow-none" 
+                  data-bs-dismiss="offcanvas" aria-label="Close"></button>
                 </div>
-                <div class="offcanvas-body ">
+                <div class=" offcanvas-body  ">
                   <ul class="navbar-nav  justify-content-center flex-grow-1 text-center pe-3">
                     <li class="nav-item mx-3 fs-4 fw-lighter">
                       <a class="nav-link active" aria-current="page" href="#">Home</a>
@@ -86,26 +93,26 @@
               <div class="row justify-content-center align-items-center">
                 <!-- start column -->
                 <div class="col-12 col-md-8 col-lg-4">
-                  <div class="item-with-text-right d-flex justify-content-center align-items-center">
+                  <div class="item-with-text-right mt-5 mt-lg-0 d-flex justify-content-center justify-content-lg-start align-items-center flex-column flex-lg-row-reverse">
                     <img src="./asset/img/html-5.png" class="w-25 square" alt="">
-                    <div class="text-center">
-                      <h6 class="mx-4"> - how web works</h6>
-                      <h6 class=""> - html5</h6>
+                    <div class="text-center text-lg-end mt-3 mt-lg-0">
+                      <h6 class="mx-4">how web works</h6>
+                      <h6 class="mx-4">html5</h6>
                     </div>
                   </div>
-                  <div class="item-with-text-right d-flex justify-content-center align-items-center">
+                  <div class="item-with-text-right d-flex justify-content-center justify-content-lg-start align-items-center flex-column flex-lg-row-reverse">
                     <img src="./asset/img/css-3.png" class="w-25 square" alt="">
-                    <div class="text-center">
-                      <h6 class="mx-4"> - css3 </h6>
-                      <h6 class="mx-4"> - css animations</h6>
-                      <h6 class="mx-4"> - css responsive</h6>
+                    <div class="text-center text-lg-end mt-3 mt-lg-0">
+                      <h6 class="mx-4">css3</h6>
+                      <h6 class="mx-4">css animations</h6>
+                      <h6 class="mx-4">css responsive</h6>
                     </div>
                   </div>
-                  <div class="item-with-text-right d-flex justify-content-center align-items-center">
+                  <div class="item-with-text-right d-flex justify-content-center justify-content-lg-start align-items-center flex-column flex-lg-row-reverse">
                     <img src="./asset/img/bootstrap.png" class="w-25 square" alt="">
-                    <div class="text-center">
-                      <h6 class="mx-4"> - bootstrap 5 </h6>
-                      <h6 class="mx-1"> -react with bootstrap </h6>
+                    <div class="text-center text-lg-end mt-3 mt-lg-0">
+                      <h6 class="mx-4">bootstrap 5</h6>
+                      <h6 class="mx-4">react with bootstrap</h6>
                     </div>
                   </div>
                 </div>
@@ -117,25 +124,25 @@
                 <!-- end column -->
                 <!-- start column -->
                 <div class="col-12 col-md-8 col-lg-4 my-5">
-                  <div class="col-12 item-with-text-left  d-flex justify-content-center align-items-center">
+                  <div class="col-12 item-with-text-left  d-flex justify-content-center justify-content-lg-start align-items-center flex-column flex-lg-row">
                     <img src="./asset/img/js.png" class="w-25  square" alt="">
-                    <div class="text-center">
-                      <h6 class="mx-4"> - javascript </h6>
-                      <h6 class="mx-4"> - javascript dom</h6>
-                      <h6 class="mx-4"> - json </h6>
+                    <div class="text-center text-lg-start mt-3 mt-lg-0">
+                      <h6 class="mx-4">javascript</h6>
+                      <h6 class="mx-4">javascript dom</h6>
+                      <h6 class="mx-4">json </h6>
                     </div> 
                   </div>
-                  <div class="col-12 item-with-text-left d-flex justify-content-center align-items-center">
+                  <div class="col-12 item-with-text-left d-flex justify-content-center justify-content-lg-start align-items-center flex-column  flex-lg-row">
                     <img src="./asset/img/react.png" class="w-25 square" alt="">
-                    <div class="text-center">
-                      <h6 class="mx-4"> - react basics </h6>
-                      <h6 class="mx-4"> - react with API's</h6>
+                    <div class="text-center text-lg-start mt-3 mt-lg-0">
+                      <h6 class="mx-4">react basics </h6>
+                      <h6 class="mx-4">react with API's</h6>
                     </div>  
                   </div>
-                  <div class="col-12 item-with-text-left  d-flex justify-content-center align-items-center">
+                  <div class="col-12 item-with-text-left  d-flex justify-content-center justify-content-lg-start align-items-center flex-column flex-lg-row">
                     <img src="./asset/img/browser.png" class="w-25  square" alt="">
-                    <div class="text-center">
-                      <h6 class="mx-5"> - rest apis </h6>
+                    <div class="text-center text-lg-start mt-3 mt-lg-0">
+                      <h6 class="mx-4">rest apis </h6>
                     </div>   
                   </div>
                 </div>
@@ -155,7 +162,7 @@
             <div class="swiper mySwiper">
               <div class="swiper-wrapper ">
                 <div class="swiper-slide  d-flex justify-content-center align-items-center">
-                  <div class="card-swip  d-flex justify-content-center flex-column align-items-center">
+                  <div class="card-swip">
                     <div class="img-content d-flex justify-content-center">
                       <span class="overly"></span>
                       <div class="card-img">
@@ -251,14 +258,14 @@
         <section class="project container">
           <div class="row my-2 justify-content-end ">
             <div class="img-con col-lg-6">
-              <img src="./asset/img/project1.png" alt="">
+              <img src="./asset/img/projR.png" alt="">
             </div>
             <div class="col-lg-6">
                 <div class="col shadow p-5 mb-5 prog-info">
                   <h5 class="fs-3">MR BURGER</h5>
                   <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed ducimus aut quas placeat itaque, voluptatibus alias quaerat!</p>
                   <p>Designed by <a href="">Raghad Alali</a></p>
-                  <button class="card-btn mt-2"><a href="https://raghadalalai1.github.io/burgers/">WATCH NOW</a></button>
+                  <button class="card-btn mt-2"><a href="https://raghadalalai1.github.io/Techie-/">WATCH NOW</a></button>
                 </div>
             </div>
           </div>
@@ -302,6 +309,20 @@
                 </div>
             </div>
           </div>
+          <div class="row my-2   justify-content-end">
+            <div class="img-con col-lg-6 ">
+              <img src="./asset/img/proj7.png"  alt="">
+            </div>
+            <div class="col-lg-6">
+                <div class="col shadow p-5 mb-5 prog-info">
+                  <h5 class="fs-3">DevFolio
+                  </h5>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed ducimus aut quas placeat itaque, voluptatibus alias quaerat!</p>
+                  <p>Designed by <a href="">Maya Sleman</a></p>
+                  <button class="card-btn mt-2"><a href="https://mayasleman.github.io/devfolio/">WATCH NOW</a></button>
+                </div>
+            </div>
+          </div>
         </section>
         <div class="About-us" id="Join">
           <h2>Join Us</h2>
@@ -315,7 +336,7 @@
               <div class="col-12">
                 <form action="">
                   <div class="container">
-                    <div class="row mb-5">
+                    <div class="row mb-1 mb-lg-5">
                       <div class="col-12 col-lg-6 ">
                         <div class="input-style shadow ">
                           <input required type="text">
@@ -368,7 +389,7 @@
                       </div>
                     </div>
                   </div>
-                  <button class="card-btn mt-2 py-2 px-3">Send Message</button>
+                  <button class="card-btn m-3 py-2 px-3">Send Message</button>
                 </form>
               </div>
             </div>

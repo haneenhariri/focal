@@ -28,6 +28,12 @@ header
     background-color: white;
     box-shadow: 0 0 2em rgba(0, 0, 0, .2);
 }
+.sidebar
+{
+    background-color: rgba(0, 0, 0, 0.651);
+    backdrop-filter: blur(20px) ;
+    height: 100vh;
+}
 .scrolled  .navbar .nav-item .nav-link
 {
     color: #000;
@@ -36,7 +42,7 @@ header
 }
 .navbar .nav-item .nav-link
 {
-    color: #fff;
+    color: #fff ;
     position: relative;
 
 }
@@ -62,6 +68,18 @@ header
     flex-grow: 1;
     overflow-y: visible;
 }
+
+.offcanvas-backdrop.show {
+    opacity: .8;
+   
+}
+/* Start Navbar Image */
+.navbar-brand img,
+.offcanvas-title img {
+    height: 25px;
+}
+/* End Navbar Image */
+
 .hero
 {
     height: 100vh;
@@ -181,7 +199,6 @@ header
 .team 
 {
     position: relative;
-    height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -194,12 +211,12 @@ header
     border-right: 5px solid #ff8500;
     margin-bottom: 50px;
 }
-  .swiper {
-    margin-left: auto;
-    margin-right: auto;
+
+.swiper {
     width: 100%;
     height: 600px;
   }
+
   /* card style */
   .card-swip
   {
@@ -301,6 +318,7 @@ header
     position: relative;
     height: 60px;
     line-height: 60px;
+    border-radius: 10px;
 }
 .input-style input,select{
     position: absolute;
@@ -314,6 +332,7 @@ header
     background: transparent;
     transition: 0.1s ease;
     z-index: 1111;
+    border-radius: 10px;
 }
 
 .input-style .lable
@@ -342,6 +361,7 @@ header
     background: transparent;
     transition: 0.1s ease;
     z-index: 1111;
+    border-radius: 10px;
 }
 .label-area
 {
@@ -391,10 +411,6 @@ header
     z-index: 1111;
 }
 
-footer
-{
-
-}
 .div-footer
 {
     background-color: #000;
@@ -437,6 +453,7 @@ footer
     margin: 0 5px;
 }
 
+
 /* respons */
 @media (min-width:992px) and (max-width:1200px)
 {
@@ -444,11 +461,18 @@ footer
 }
 @media (min-width:768px) and (max-width:992px)
 {
-    .sidbar
-    {
-        background-color: white  !important;
-        backdrop-filter: blur(20px) !important;
-    }
+    .scrolled .sidebar
+{
+        background-color: rgba(0, 0, 0, 0.651);
+        backdrop-filter: blur(20px) ;
+}
+.scrolled .sidebar .nav-item .nav-link
+{
+    color: #fff ;
+    position: relative;
+
+}
+
     .swiper-button-next,.swiper-button-prev
     {
         display: none !important;
@@ -460,9 +484,16 @@ footer
 }
 @media (min-width:576px) and (max-width:768px)
 {
-    .sidbar
+    .scrolled .sidebar
     {
-       
+            background-color: rgba(0, 0, 0, 0.651);
+            backdrop-filter: blur(20px) ;
+    }
+    .scrolled .sidebar .nav-item .nav-link
+    {
+        color: #fff ;
+        position: relative;
+    
     }
     .swiper-button-next,.swiper-button-prev
     {
@@ -484,10 +515,16 @@ footer
 }
 @media (min-width:300px) and (max-width:576px)
 {
-    .sidbar
+    .scrolled .sidebar
     {
-        background-color: rgba(0, 0, 0, 0.356);
-        backdrop-filter: blur(20px);
+            background-color: rgba(0, 0, 0, 0.651);
+            backdrop-filter: blur(20px) ;
+    }
+    .scrolled .sidebar .nav-item .nav-link
+    {
+        color: #fff ;
+        position: relative;
+    
     }
     .swiper-button-next,.swiper-button-prev
     {
